@@ -52,6 +52,9 @@ hr {
     border-bottom: 1px solid #d1d1e0;
 }
 
+.news {
+}
+
 .navbar {
     top: 0;
     width: 90%;
@@ -63,14 +66,14 @@ hr {
 
 .nav-colored {
     background-color: #00001a;
-    transition: 200ms linear;
+    transition: background-color 300ms linear;
 }
 
 .nav-transparent{
     background: rgba(0,0,0,0.2);
     padding-top: 1vh;
     padding-bottom: 1vh;
-    transition: background-color 200ms linear;
+    transition: background-color 300ms linear;
 }
 
 .nav-icon {
@@ -96,7 +99,7 @@ hr {
 }
 
 .img{
-    background-image: url("../asset/background2.jpg");
+    background-image: url("../asset/background.jpg");
     background-position: center;
     background-color: rgba(0,0,0, 0.5);
     background-size: cover;
@@ -181,9 +184,12 @@ hr {
 #footer {
     bottom: 0;
     width: 100%;
-    height: 4rem;
+    height: 3rem;
     margin-top: 3em;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     font-style: italic;
     color: white;
     background-color: #000033;
