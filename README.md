@@ -1,4 +1,4 @@
-# UTACG_website
+# UTACG
 Collections of related club materials.
 
 ## Goal
