@@ -1,0 +1,113 @@
+body, html{
+    margin: 0px;
+    height: 100%;
+    background-image: url("../asset/form_bg.jpg");
+
+    /* Set a specific height */
+    height: 100%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../asset/form_bg.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kororo{
+    transform: scale(0.7);
+    position: absolute;
+    top: -5vh;
+    left: 16vw;
+    animation-name: kororo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes kororo {
+    0%{
+        top: -15vh;
+        opacity: 0;
+    }
+    100%{
+        top: -5vh;
+        opacity: 100%;
+    }
+}
+
+.kororo_container {
+    height: 360px;
+    background:  linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    border-radius: 5px;
+}
+
+.dialog_box{
+    position: absolute;
+    width: 40%;
+    height: 12%;
+    top: 100px;
+    left: 33vw;
+    border: 1px black groove;
+    border-radius: 9px 9px 9px 9px;
+    animation-name: dialog-box;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    overflow: auto;
+}
+
+@keyframes dialog-box {
+    0%{
+        top:0px;
+    }
+    100%{
+        top:100px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.dialog {
+    font-family: 'VT323', monospace;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.central_form{
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+    height: 100%;
+}
+
+@media (max-width: 1220px) {
+    .kororo{
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    .dialog{
+        font-size: 1.2em;
+    }
+}
