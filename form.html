@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./css/form_style.css">
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     </head>
     <body>
         <img class="kororo" src="./asset/kororo.png" alt="">
@@ -20,6 +20,47 @@
                         你就会获得与魔王对抗的力量，我们的世界需要你。。
                 </div>
             </div>
+
+            <div class="content_header">
+                <h2>Reume Submission</h2>
+            </div>
+
+            <form class="form" action="" method="post">
+                <label class="expand" for="Name"></label>
+                <div class="form_input">
+                    <span class="input_style">姓名</span>
+                    <input class="search_bar" id="Name" type="text" >
+                </div>
+
+                <label class="expand" for="class"></label>
+                <div class="form_input">
+                    <span class="input_style">职业</span>
+                    <select class="search_bar" id="class" style="font-size: 1.2em;">
+                        <option value="魔法师">魔法师</option>
+                        <option value="狂战士">狂战士</option>
+                        <option value="刺客">刺客</option>
+                        <option value="牧师">牧师</option>
+                        <option value="圣骑（谁组的踢了！）">圣骑（谁组的踢了！）</option>
+                    </select>
+                </div>
+
+                <label class="expand" for="gender"></label>
+                <div class="form_input">
+                    <span class="input_style">性别</span>
+                    <select class="search_bar" id="gender" style="font-size: 1.2em;">
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                </div>
+
+                <label for="introduction"></label>
+                <div class="form_input">
+                    <div class="input_style">自我介绍</div>
+                    <input type="text" id="introduction" class="search_bar intro">
+                </div>
+
+                <label for="Submission"></label>
+            </form>
         </main>
     </body>
 </html>

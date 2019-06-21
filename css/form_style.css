@@ -14,8 +14,10 @@ body, html{
     background-size: cover;
 }
 
-main {
-
+h2 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-weight: normal;
 }
 
 .parallax {
@@ -37,10 +39,11 @@ main {
     transform: scale(0.7);
     position: absolute;
     top: -5vh;
-    left: 16vw;
+    left: 11.5vw;
     animation-name: kororo;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    filter: drop-shadow(10px 10px 10px #ffb3d9);
 }
 
 @keyframes kororo {
@@ -64,12 +67,13 @@ main {
     position: absolute;
     width: 40%;
     height: 12%;
-    top: 100px;
-    left: 33vw;
-    border: 1px black groove;
+    top: 110px;
+    left: 29vw;
+    border: 2px white groove;
     border-radius: 9px 9px 9px 9px;
+    box-shadow: 2px 3px #c2c2d6;
     animation-name: dialog-box;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     overflow: auto;
 }
@@ -79,7 +83,7 @@ main {
         top:0px;
     }
     100%{
-        top:100px;
+        top:110px;
     }
 }
 
@@ -98,9 +102,58 @@ main {
     margin-left: 20%;
     margin-right: 20%;
     background-color: white;
-    height: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding-bottom: 5vh;
 }
 
+.form {
+}
+
+.content_header {
+    font-size: 2.6em;
+    font-family: 'Lobster', monospace;
+    width: 70%;
+    margin-left: 3%;
+    border-bottom: 1px #9494b8 solid;
+}
+
+.form_input {
+    margin-top: 3vh;
+    margin-left: 5%;
+}
+
+.input_style {
+    font-style: italic;
+    font-family: 'Lobster', monospace;
+    font-size: 1.5em;
+}
+
+.search_bar {
+    font-size: 1.4em;
+    font-style: italic;
+    font-family: 'VT323', monospace;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 1.5em;
+    width: 20vw;
+    border-radius: 8px;
+}
+
+.search_bar:focus {
+    outline-width: 0px;
+}
+
+.form_right{
+    float: right;
+    margin-right: 10%;
+}
+
+.intro {
+    margin-top: 1vh;
+    height: 30vh;
+    width: 80%;
+}
 @media (max-width: 1220px) {
     .kororo{
         display: none;
